@@ -1,4 +1,3 @@
-
 # Desafio: Unidades Básicas de Saúde (UBS) :pill:
 
 [![GitHub issues][ImagemProblema]][Defeito] [![GitHub license][ImagemLicenca]][Licenca]
@@ -13,7 +12,8 @@
 
 **Este projeto reflete uma adaptação de um desafio/teste** realizado no ano de 2018, como parte de um processo seletivo ao qual participei para vaga de Desenvolvedor DotNET.
 
-Além da adaptação ao desafio, buscou-se atender os requisitos solicitados originalmente, além de ter sido adicionado conhecimentos concernentes a gestão de projetos, gerência de configuração, analises de sistemas, DevOps e etc, **apenas para fins de estudos**.
+Buscou-se atender os requisitos solicitados originalmente, além de ter sido adicionado conhecimentos (não solicitados) concernentes a [metodologia ágil][Projeto], gestão de projetos, gerência de configuração, analises de sistemas, DevOps e etc neste repositório **apenas para fins de estudos**.
+
 
 ## Os recursos utilizados no desenvolvimento do desafio:
 
@@ -52,11 +52,12 @@ Além da adaptação ao desafio, buscou-se atender os requisitos solicitados ori
 [GuiaNetStandard2]: <https://docs.microsoft.com/pt-br/archive/msdn-magazine/2017/september/net-standard-demystifying-net-core-and-net-standard>
 [GuiaEntityCore]: <https://docs.microsoft.com/pt-br/ef/core/>
 
+
 ## O Cenário
 
-Você trabalha para o Ministério da Saúde e o Ministro da Saúde decidiu que chegou a hora de implementar uma nova funcionalidade que 
-permita os usuários consultar Unidades Básicas de Saúde mais próximas deles para então tomar a decisão de qual a melhor unidade de 
-poderá atendê-lo.
+Você trabalha para o Ministério da Saúde e o atual Ministro, decidiu que chegou a hora de implementar um novo projeto, cuja proposta
+é uma API para ajudar população brasilera em geral a localizar a **Unidade Básica de Saúde (UBS)** *mais próxima* de sua localização 
+ou localização informada.
 
 Sua função é implementar uma API que permita consultar e listas as 5 Unidades Básicas de Saúde (UBSs) mais próximas das coordenadas 
 de latitude e longitude fornecidas como parâmetro. Por fim, o resultado deverá ser apresentedo ordenado pela avaliação de desempenho 
@@ -87,34 +88,46 @@ E eles foram divididos e estruturados da seguinte forma:
 
 [//]: # (Links de referências para documentação)
 
-[ProjetoWebApi]: <https://github.com/alexandredorea/UnidadeBasicaSaude/tree/develop/src/AMcom.Usb.WebApi>
-[ProjetoDominio]: <https://github.com/alexandredorea/UnidadeBasicaSaude/tree/develop/src/AMcom.Usb.Dominio>
-[ProjetoMediador]: <https://github.com/alexandredorea/UnidadeBasicaSaude/tree/develop/src/AMcom.Usb.Dominio.Mediador>
-[ProjetoServico]: <https://github.com/alexandredorea/UnidadeBasicaSaude/tree/develop/src/AMcom.Usb.Dominio.Servico>
-[ProjetoDados]: <https://github.com/alexandredorea/UnidadeBasicaSaude/tree/develop/src/AMcom.Usb.Infra.BancoDeDados>
-[ProjetoTeste]: <https://github.com/alexandredorea/UnidadeBasicaSaude/tree/develop/test/AMcom.Usb.Teste>
+[ProjetoWebApi]: <https://github.com/alexandredorea/UnidadeBasicaSaude/tree/develop/src/Modelo.Usb.WebApi>
+[ProjetoDominio]: <https://github.com/alexandredorea/UnidadeBasicaSaude/tree/develop/src/Modelo.Usb.Dominio>
+[ProjetoMediador]: <https://github.com/alexandredorea/UnidadeBasicaSaude/tree/develop/src/Modelo.Usb.Dominio.Mediador>
+[ProjetoServico]: <https://github.com/alexandredorea/UnidadeBasicaSaude/tree/develop/src/Modelo.Usb.Dominio.Servico>
+[ProjetoDados]: <https://github.com/alexandredorea/UnidadeBasicaSaude/tree/develop/src/Modelo.Usb.Infra.BancoDeDados>
+[ProjetoTeste]: <https://github.com/alexandredorea/UnidadeBasicaSaude/tree/develop/test/Modelo.Usb.Teste>
 
-**A estrutura do projeto da seguinte forma:**
+**A estrutura do projeto:**
 
-* **Host**:
-  - src\AMcom.Ubs.WebApi
-* **Domínio**:
-  - src\AMcom.Ubs.Dominio
-  - src\AMcom.Ubs.Dominio.Mediador
-  - src\AMcom.Ubs.Dominio.Servico
-* **Infra**:
-  - src\AMcom.Ubs.Infra.BancoDeDados
-* **Testes**:
-  - test\AMcom.Ubs.WebApi
-
+```
+├── 0. doc
+│   
+├── 1. src
+│   │
+│   ├── 1.1. Host
+│   │   │
+│   │   └── Modelo.Ubs.WebApi
+│   │   
+│   ├── 1.2. Domínio
+│   │   │
+│   │   ├── Modelo.Ubs.Dominio
+│   │   ├── Modelo.Ubs.Dominio.Mediador
+│   │   └── Modelo.Ubs.Dominio.Servico
+│   │   
+│   └── 1.3. Infra
+│       │
+│       └── Modelo.Ubs.Infra.BancoDeDados
+└── 2. test
+    │
+    └── Modelo.Ubs.Test
+```
 
 ## Observação
 
 1. O desafio foi resolvido observando as boas práticas de desenvolvimento web;
 2. O código "server-side" foi desenvolvido buscando seguir as convenções RESTful (ainda que parcialmente com apenas o HTTP GET);
-3. Para as Injeções de Dependências (onde é relacionado as interfaces com as classes e registrados no container), buscou-se observar como a Microsoft sugere hoje de boa prática;
-4. Como conhecimento extra a este desafio (não foi solicitado), foi aplicado conceitos de Metodologia Ágil [Kanban e Scrum][Projeto], os quais foram definidas as *tasks* para uma melhor organização.
+3. Para as Injeções de Dependências (onde é relacionado as interfaces com as classes e registrados no container), buscou-se observar como a Microsoft sugere hoje de boa prática em projeto Net Core;
+4. Como conhecimento extra a este desafio (não foi solicitado), foram aplicado conceitos de Metodologia Ágil [Kanban e Scrum][Projeto], os quais foram definidas as *tasks* para uma melhor organização.
 
+--------------
 
 ## Andamento do Projeto
 
@@ -134,3 +147,9 @@ Sinta-se à vontade em abrir um [Issue][Defeito] ou [Pull Request][PullRequest],
 [Defeito]: <https://github.com/alexandredorea/UnidadeBasicaSaude/issues>
 [PullRequest]: <https://github.com/alexandredorea/UnidadeBasicaSaude/pulls>
 [Licenca]: <https://github.com/alexandredorea/UnidadeBasicaSaude/blob/master/LICENSE>
+
+--------------
+
+## :star: Deixe uma estrela 
+
+Se você gostou deste projeto ou te ajudou de alguma forma com algum conceito, clica na estrelinha, isso ajuda muito.

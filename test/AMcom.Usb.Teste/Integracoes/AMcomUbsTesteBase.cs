@@ -1,10 +1,10 @@
-﻿using AMcom.Ubs.Infra.BancoDeDados.Contextos;
-using AMcom.Ubs.Teste.Base;
+﻿using Modelo.Ubs.Infra.BancoDeDados.Contextos;
+using Modelo.Ubs.Teste.Base;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using NSubstitute;
 
-namespace AMcom.Ubs.Teste.Integracoes
+namespace Modelo.Ubs.Teste.Integracoes
 {
     public abstract class AMcomUbsTesteBase : TesteBase
     {

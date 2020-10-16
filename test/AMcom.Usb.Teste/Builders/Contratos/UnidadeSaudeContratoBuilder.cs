@@ -1,6 +1,6 @@
-﻿using AMcom.Ubs.Dominio.Contratos;
+﻿using Modelo.Ubs.Dominio.Contratos;
 
-namespace AMcom.Ubs.Teste.Builders.Contratos
+namespace Modelo.Ubs.Teste.Builders.Contratos
 {
     internal class UnidadeSaudeContratoBuilder
     {
