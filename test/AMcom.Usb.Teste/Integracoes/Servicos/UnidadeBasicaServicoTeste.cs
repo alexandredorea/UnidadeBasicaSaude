@@ -1,7 +1,7 @@
-﻿using AMcom.Ubs.Dominio.Excecoes;
-using AMcom.Ubs.Dominio.Interfaces.Servicos;
-using AMcom.Ubs.Dominio.Modelos;
-using AMcom.Ubs.Teste.Builders.Contratos;
+﻿using Modelo.Ubs.Dominio.Excecoes;
+using Modelo.Ubs.Dominio.Interfaces.Servicos;
+using Modelo.Ubs.Dominio.Modelos;
+using Modelo.Ubs.Teste.Builders.Contratos;
 using FluentAssertions;
 using NSubstitute;
 using NSubstitute.ExceptionExtensions;
@@ -10,7 +10,7 @@ using System;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace AMcom.Ubs.Teste.Integracoes.Servicos
+namespace Modelo.Ubs.Teste.Integracoes.Servicos
 {
     public class UnidadeBasicaServicoTeste : AMcomUbsTesteBase
     {

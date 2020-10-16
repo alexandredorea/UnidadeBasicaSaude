@@ -1,5 +1,5 @@
-﻿using AMcom.Ubs.Infra.BancoDeDados.Contextos.Base;
-using AMcom.Ubs.Infra.BancoDeDados.Repositorios.Base;
+﻿using Modelo.Ubs.Infra.BancoDeDados.Contextos.Base;
+using Modelo.Ubs.Infra.BancoDeDados.Repositorios.Base;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
@@ -9,7 +9,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 
-namespace AMcom.Ubs.Teste.Base
+namespace Modelo.Ubs.Teste.Base
 {
     public abstract class TesteBase
     {
