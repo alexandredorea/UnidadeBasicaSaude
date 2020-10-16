@@ -11,7 +11,7 @@
 
 ## Introdução
 
-**Este projeto reflete uma adaptação de um desafio/teste** realizado como parte de um processo seletivo ao qual participei para vaga de Desenvolvedor DotNET.
+**Este projeto reflete uma adaptação de um desafio/teste** realizado no ano de 2018, como parte de um processo seletivo ao qual participei para vaga de Desenvolvedor DotNET.
 
 Além da adaptação ao desafio, buscou-se atender os requisitos solicitados originalmente, além de ter sido adicionado conhecimentos concernentes a gestão de projetos, gerência de configuração, analises de sistemas, DevOps e etc, **apenas para fins de estudos**.
 
@@ -91,7 +91,7 @@ E eles foram divididos da seguinte forma:
   - Domínio: Camada responsável por conter entidades/modelos com um domínio rico (metodos, atributos e comportamentos), as regras de negócio, etc para atender o cenário descrito acima.
   - Mediador: Camada que faz mediação entre a WebApi e a camanda de serviço, e isola o acesso direto a outros modulos.
   - Serviço: Camada responsável por solicita as informações à camada de acesso a dados.
-* **Infra**: Camada de acesso a dados, onde encontra-se o acesso aos dados da aplicação.
+* **Infra**: Camada de acesso a dados, a qual é responsável por prover os dados para a aplicação.
 * **Testes**:
   - Teste: Camada que garante os testes funcionais da aplicação e do que foi solicitado no cenário;
 

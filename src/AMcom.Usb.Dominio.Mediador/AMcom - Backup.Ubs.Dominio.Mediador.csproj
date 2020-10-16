@@ -1,0 +1,19 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <Description>Esta é uma adaptação/melhoria de um teste aplicado para uma vaga de desenvolvedor</Description>
+    <Authors>Alexandre Dórea</Authors>
+    <Copyright>Alexandre Dórea</Copyright>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="MediatR.Extensions.Microsoft.DependencyInjection" Version="8.1.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\AMcom.Ubs.Dominio.Servico\AMcom.Ubs.Dominio.Servico.csproj" />
+    <ProjectReference Include="..\AMcom.Usb.Dominio\AMcom.Ubs.Dominio.csproj" />
+  </ItemGroup>
+
+</Project>
