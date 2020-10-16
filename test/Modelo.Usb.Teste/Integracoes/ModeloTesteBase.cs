@@ -6,7 +6,7 @@ using NSubstitute;
 
 namespace Modelo.Ubs.Teste.Integracoes
 {
-    public abstract class AMcomUbsTesteBase : TesteBase
+    public abstract class ModeloTesteBase : TesteBase
     {
         protected override void AdicionarServicos(IServiceCollection servicos, IConfiguration configuracao)
         {
