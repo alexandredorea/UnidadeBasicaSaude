@@ -66,19 +66,7 @@ dessas unidades da mais alta para a mais baixa.
 ## A Documentação
 
 Cada projeto (assembly) contém um arquivo README.md com mais detalhes sobre a implementação deste desafio.
-E eles foram divididos da seguinte forma:
-
-1. [Host][CamadaHost]
-2. [Domínio][CamadaDominio]
-3. [Infra][CamadaDominio]
-4. [Teste][CamadaTeste]
-
-[//]: # (Links de referências para documentação)
-
-[CamadaHost]: <>
-[CamadaDominio]: <>
-[CamadaInfra]: <>
-[CamadaTeste]: <>
+E eles foram divididos e estruturados da seguinte forma:
 
 
 ## A Divisão e Estrutura do Projeto
@@ -86,14 +74,25 @@ E eles foram divididos da seguinte forma:
 **A solução está divida nas seguintes camadas:**
 
 * **Host**:
-  - WebApi: Expõe um método HTTP GET para retornar os dados solicitados no cenário descrito.
+  - [WebApi][ProjetoWebApi]: Expõe um método HTTP GET para retornar os dados solicitados no cenário descrito.
 * **Domínio**:
-  - Domínio: Camada responsável por conter entidades/modelos com um domínio rico (metodos, atributos e comportamentos), as regras de negócio, etc para atender o cenário descrito acima.
-  - Mediador: Camada que faz mediação entre a WebApi e a camanda de serviço, e isola o acesso direto a outros modulos.
-  - Serviço: Camada responsável por solicita as informações à camada de acesso a dados.
-* **Infra**: Camada de acesso a dados, a qual é responsável por prover os dados para a aplicação.
+  - [Domínio][ProjetoDominio]: Camada responsável por conter entidades/modelos com um domínio rico (metodos, atributos e comportamentos), as regras de negócio, etc para atender o cenário descrito acima.
+  - [Mediador][ProjetoMediador]: Camada que faz mediação entre a WebApi e a camanda de serviço, e isola o acesso direto a outros modulos.
+  - [Serviço][ProjetoServico]: Camada responsável por solicita as informações à camada de acesso a dados.
+* **Infra**: 
+  - [Banco de Dados][ProjetoDados]: Camada de acesso a dados, a qual é responsável por prover os dados para a aplicação.
 * **Testes**:
-  - Teste: Camada que garante os testes funcionais da aplicação e do que foi solicitado no cenário;
+  - [Teste][ProjetoTeste]: Camada que garante os testes funcionais da aplicação e do que foi solicitado no cenário;
+
+
+[//]: # (Links de referências para documentação)
+
+[ProjetoWebApi]: <https://github.com/alexandredorea/UnidadeBasicaSaude/tree/develop/src/AMcom.Usb.WebApi>
+[ProjetoDominio]: <https://github.com/alexandredorea/UnidadeBasicaSaude/tree/develop/src/AMcom.Usb.Dominio>
+[ProjetoMediador]: <https://github.com/alexandredorea/UnidadeBasicaSaude/tree/develop/src/AMcom.Usb.Dominio.Mediador>
+[ProjetoServico]: <https://github.com/alexandredorea/UnidadeBasicaSaude/tree/develop/src/AMcom.Usb.Dominio.Servico>
+[ProjetoDados]: <https://github.com/alexandredorea/UnidadeBasicaSaude/tree/develop/src/AMcom.Usb.Infra.BancoDeDados>
+[ProjetoTeste]: <https://github.com/alexandredorea/UnidadeBasicaSaude/tree/develop/test/AMcom.Usb.Teste>
 
 **A estrutura do projeto da seguinte forma:**
 
