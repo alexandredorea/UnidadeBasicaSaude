@@ -1,0 +1,19 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <Authors>Alexandre Dórea</Authors>
+    <Product>AMcom.Ubs.WebApi</Product>
+    <Description>Esta é uma adaptação/melhoria de um teste aplicado para uma vaga de desenvolvedor</Description>
+    <Copyright>Alexandre Dórea</Copyright>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="5.6.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\AMcom.Usb.Dominio.Mediador\AMcom.Ubs.Dominio.Mediador.csproj" />
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,14 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <Description>Esta é uma adaptação/melhoria de um teste aplicado para uma vaga de desenvolvedor</Description>
+    <Authors>Alexandre Dórea</Authors>
+    <Copyright>Alexandre Dórea</Copyright>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="GeoCoordinate.NetCore" Version="1.0.0.1" />
+  </ItemGroup>
+
+</Project>
